@@ -14,9 +14,12 @@ public class ProductController {
     @GetMapping("/products")
     public List<Product> getProducts(){
         return List.of(
-                new Product("P1", "D1", 10),
+                /*new Product("P1", "D1", 10),
                 new Product("P2", "D2", 20),
-                new Product("P3", "D3", 30)
+                new Product("P3", "D3", 30)*/
+                new Product(),
+                new Product(),
+                new Product()
         );
     }
 
@@ -24,7 +27,8 @@ public class ProductController {
     public Product getProduct(@PathVariable int id, @PathParam("lang") String lang){
         System.out.println("lang =" + lang);
         System.out.println("lang =" + id);
-        return new Product("P1", "D1", 30);
+        //return new Product("P1", "D1", 30);
+        return new Product();
     }
 
 }

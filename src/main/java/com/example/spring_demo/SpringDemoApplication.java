@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
-@RestController
+@RestController //è come noi esponiamo le API, è il figlio di Contoller va bene pure però è meglio RestController
 public class SpringDemoApplication {
 
     public static void main(String[] args) {
